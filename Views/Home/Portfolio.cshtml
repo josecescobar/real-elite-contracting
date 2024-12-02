@@ -1,18 +1,66 @@
-@model TModel
-
 @{
-    Layout = null;
+    ViewData["Title"] = "Our Portfolio";
 }
 
-<!DOCTYPE html>
+<div class="container mt-5">
+    <!-- Portfolio Header -->
+    <h2 class="text-center mb-4">Our Work</h2>
+    <p class="text-center">Check out some of our past home remodeling projects. We take pride in the quality of our work, and our portfolio reflects our dedication to excellence.</p>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
+    <!-- Portfolio Filter (Optional) -->
+    <div class="text-center mb-4">
+        <button class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="kitchen">Kitchen Remodel</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="bathroom">Bathroom Renovation</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="outdoor">Outdoor Spaces</button>
+    </div>
+
+    <!-- Portfolio Items -->
+    <div class="row portfolio-items">
+        <div class="col-md-4 mb-4 portfolio-item" data-category="kitchen">
+            <a href="~/images/kitchen_remodel.jpg" data-lightbox="portfolio" data-title="Kitchen Remodel - A complete renovation of an outdated kitchen, transforming it into a bright, modern, and functional space.">
+                <img src="~/images/kitchen_remodel.jpg" alt="Kitchen Remodel" class="img-fluid rounded portfolio-img" />
+            </a>
+            <h5 class="mt-2">Kitchen Remodel</h5>
+            <p>A complete renovation of an outdated kitchen, transforming it into a bright, modern, and functional space.</p>
+        </div>
+        <div class="col-md-4 mb-4 portfolio-item" data-category="bathroom">
+            <a href="~/images/bathroom_renovation.jpg" data-lightbox="portfolio" data-title="Bathroom Renovation - A luxurious bathroom upgrade, featuring custom tile work, modern fixtures, and a relaxing ambiance.">
+                <img src="~/images/bathroom_renovation.jpg" alt="Bathroom Renovation" class="img-fluid rounded portfolio-img" />
+            </a>
+            <h5 class="mt-2">Bathroom Renovation</h5>
+            <p>A luxurious bathroom upgrade, featuring custom tile work, modern fixtures, and a relaxing ambiance.</p>
+        </div>
+        <div class="col-md-4 mb-4 portfolio-item" data-category="addition">
+            <a href="~/images/room_addition.jpg" data-lightbox="portfolio" data-title="Room Addition - Added extra space for a growing family, designed to blend seamlessly with the existing architecture.">
+                <img src="~/images/room_addition.jpg" alt="Room Addition" class="img-fluid rounded portfolio-img" />
+            </a>
+            <h5 class="mt-2">Room Addition</h5>
+            <p>Added extra space for a growing family, designed to blend seamlessly with the existing architecture.</p>
+        </div>
+    </div>
+
+    <div class="row portfolio-items mt-4">
+        <div class="col-md-4 mb-4 portfolio-item" data-category="living-room">
+            <a href="~/images/living_room.jpg" data-lightbox="portfolio" data-title="Living Room Update - A spacious living room updated with new flooring, custom built-ins, and fresh paint for a cozy, welcoming feel.">
+                <img src="~/images/living_room.jpg" alt="Living Room Update" class="img-fluid rounded portfolio-img" />
+            </a>
+            <h5 class="mt-2">Living Room Update</h5>
+            <p>A spacious living room updated with new flooring, custom built-ins, and fresh paint for a cozy, welcoming feel.</p>
+        </div>
+        <div class="col-md-4 mb-4 portfolio-item" data-category="outdoor">
+            <a href="~/images/outdoor_patio.jpg" data-lightbox="portfolio" data-title="Outdoor Patio - Created a beautiful outdoor patio space with custom pavers, a fire pit, and comfortable seating.">
+                <img src="~/images/outdoor_patio.jpg" alt="Outdoor Patio" class="img-fluid rounded portfolio-img" />
+            </a>
+            <h5 class="mt-2">Outdoor Patio</h5>
+            <p>Created a beautiful outdoor patio space with custom pavers, a fire pit, and comfortable seating.</p>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="text-center mt-5">
+        <h3>Inspired by Our Work?</h3>
+        <p>Contact us today to discuss your home remodeling ideas and see how we can bring your vision to life.</p>
+        <a class="btn btn-primary btn-lg" asp-controller="Home" asp-action="Contact">Get in Touch</a>
+    </div>
 </div>
-</body>
-</html>

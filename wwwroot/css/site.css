@@ -1,3 +1,4 @@
+/* Base Font Size */
 html {
   font-size: 14px;
 }
@@ -8,24 +9,192 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
+/* General Layout Adjustments */
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
+  font-family: Arial, sans-serif; /* Clean font for better readability */
+  background-color: #f8f9fa; /* Light background for better contrast */
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+/* Navbar Styling */
+.navbar {
+  background-color: #2c3e50 !important; /* Ensure a consistent dark background color */
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.navbar-brand, .nav-link {
+  color: #ffffff !important; /* Ensure navbar links are white for contrast */
+}
+
+.nav-link:hover {
+  color: #f1c40f !important; /* Highlight color for links on hover */
+}
+
+/* Active Link Styling in Navbar */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #f1c40f; /* Add a bottom border to indicate active page */
+}
+
+/* Carousel Styling */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.carousel-caption h5 {
+  color: #ffffff;
+}
+
+.carousel-caption p {
+  color: #f1f1f1;
+}
+
+/* Header Section */
+h1.display-4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50; /* Dark blue-gray for better readability */
+}
+
+.lead {
+  color: #34495e; /* Darker shade for lead paragraph */
+}
+
+/* Service Section Styling */
+.container h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #34495e; /* Dark blue-gray for headers */
+}
+
+h3 {
+  color: #2980b9; /* Bold blue for section headings */
+}
+
+.container p {
+  line-height: 1.6;
+  color: #5d6d7e; /* Lighter gray for readability */
+}
+
+/* Testimonial Section */
+.card {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add spacing between cards */
+}
+
+.card-body blockquote {
+  font-style: italic;
+  color: #2c3e50; /* Match site theme */
+}
+
+.blockquote-footer {
+  color: #8e8e8e;
+}
+
+/* Call to Action Button */
+.btn-primary {
+  background-color: #e67e22; /* Orange for strong call to action */
+  border-color: #e67e22;
+}
+
+.btn-primary:hover {
+  background-color: #d35400;
+  border-color: #d35400;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2c3e50; /* Darker background to match navbar */
+  color: #ffffff;
+  padding: 40px 0; /* Increase padding for better spacing */
+}
+
+footer h5 {
+  color: #f1c40f; /* Highlight footer headings */
+  margin-bottom: 20px; /* Add margin for better spacing */
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+/* Quick Link Styles in Footer */
+footer ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+/* Footer Layout Fix */
+footer .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.footer-contact, .footer-links {
+  color: #dcdcdc; /* Lighter text color for readability */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 0.9rem;
+  }
+
+  footer h5 {
+    font-size: 1.1rem;
+  }
+
+  footer p, footer a {
+    font-size: 0.9rem;
+  }
+
+  footer .col-md-4 {
+    text-align: center;
+  }
+}
+
+/* General Button Hover Effects */
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Spacing Adjustments */
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+
+/* Prevent Footer Overlap */
+.container {
+  margin-bottom: 60px; /* Ensure container does not overlap with footer */
 }

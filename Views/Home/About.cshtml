@@ -1,18 +1,82 @@
-@model TModel
-
 @{
-    Layout = null;
+    ViewData["Title"] = "About Us";
 }
 
-<!DOCTYPE html>
+<div class="container mt-5">
+    <!-- About Us Section -->
+    <h2 class="text-center mb-4">About Us</h2>
+    <p class="lead text-center">
+        Welcome to Real Elite Contracting! We specialize in providing high-quality home remodeling services, tailored to meet your needs. Our team is committed to delivering exceptional craftsmanship and customer satisfaction.
+    </p>
+    <p class="text-center">
+        With years of experience, we’ve helped transform homes into beautiful, functional spaces. Whether you're looking for kitchen remodeling, bathroom updates, or a full home renovation, we’re here to help!
+    </p>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
+    <!-- Our Mission Section -->
+    <div class="mt-5">
+        <h3 class="text-center mb-4">Our Mission</h3>
+        <p class="text-center">
+            Our mission is to provide top-notch home renovation services with the highest quality standards while maintaining transparent communication and dedication to each client. We believe every homeowner deserves a beautiful and functional space that they love.
+        </p>
+    </div>
+
+    <!-- Team Section -->
+    <div class="mt-5">
+        <h3 class="text-center mb-4">Meet Our Team</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="~/images/team_member1.jpg" alt="John Doe - Lead Contractor" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+                <h4>John Doe</h4>
+                <p>Lead Contractor</p>
+                <p>John brings over 15 years of experience in home remodeling, specializing in kitchen and bathroom renovations. He is passionate about turning your vision into reality.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="~/images/team_member2.jpg" alt="Jane Smith - Project Manager" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+                <h4>Jane Smith</h4>
+                <p>Project Manager</p>
+                <p>Jane is dedicated to keeping projects on track and ensuring clear communication between our team and clients. She takes pride in delivering projects on time and within budget.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="~/images/team_member3.jpg" alt="Michael Brown - Designer" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+                <h4>Michael Brown</h4>
+                <p>Designer</p>
+                <p>Michael has a keen eye for detail and a knack for creating beautiful, functional spaces. He works closely with clients to make sure every design detail exceeds expectations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Values Section -->
+    <div class="mt-5">
+        <h3 class="text-center mb-4">Our Core Values</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <strong>Integrity:</strong> We believe in honest communication, transparency, and doing the right thing, no matter the circumstance.
+            </li>
+            <li class="list-group-item">
+                <strong>Quality:</strong> Quality is at the heart of everything we do. We use the best materials and adhere to the highest standards.
+            </li>
+            <li class="list-group-item">
+                <strong>Customer Satisfaction:</strong> Your satisfaction is our top priority. We work closely with you throughout the process to make sure your vision comes to life.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="mt-5">
+        <h3 class="text-center mb-4">What Our Clients Say</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <blockquote class="blockquote bg-light p-4 rounded">
+                    <p class="mb-0">"The Real Elite Contracting team did an amazing job on our kitchen renovation! Their attention to detail and customer service exceeded our expectations."</p>
+                    <footer class="blockquote-footer">Emily R.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <blockquote class="blockquote bg-light p-4 rounded">
+                    <p class="mb-0">"We are thrilled with the results of our bathroom remodel. The team was professional, on time, and their craftsmanship is top-notch."</p>
+                    <footer class="blockquote-footer">Michael T.</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
 </div>
-</body>
-</html>
